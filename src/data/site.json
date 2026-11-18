@@ -1,11 +1,11 @@
 {
-  "name": "Adon Omeri",
-  "about": [
-    "A bit about me goes here. Each string in this array is its own paragraph."
-  ],
-  "socials": [
-    { "label": "GitHub", "url": "https://github.com/omeriadon" },
-    { "label": "X", "url": "https://x.com/AdonOmeri" },
-    { "label": "Email", "url": "mailto:omeriadon@outlook.com" }
-  ]
+	"name": "Adon Omeri",
+	"about": [
+		"I'm a high school student, and in my free time I make apps for  platforms."
+	],
+	"socials": [
+		{ "label": "GitHub", "url": "https://github.com/omeriadon" },
+		{ "label": "X", "url": "https://x.com/AdonOmeri" },
+		{ "label": "Email", "url": "mailto:omeriadon@outlook.com" }
+	]
 }
