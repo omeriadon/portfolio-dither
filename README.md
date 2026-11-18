@@ -8,6 +8,21 @@ bun dev        # http://localhost:3000
 bun run build
 ```
 
+## Docker
+
+```sh
+docker compose up --build -d      # http://localhost:3000
+```
+
+Or without compose:
+
+```sh
+docker build -t portfolio-dither .
+docker run -p 3000:3000 portfolio-dither
+```
+
+The image builds Next's standalone server with bun and runs it with bun on port 3000 (set `PORT` to change it).
+
 ## Editing content
 
 - `src/data/site.json`: your name, the about paragraphs on the home page, and social links.
