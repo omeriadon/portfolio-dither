@@ -28,7 +28,7 @@ export default function Home() {
               href="/projects"
               className="text-sm text-muted underline decoration-subtle underline-offset-4 hover:text-foreground hover:decoration-foreground"
             >
-              all {projects.length} →
+              all projects →
             </Link>
           </div>
           <ul className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
