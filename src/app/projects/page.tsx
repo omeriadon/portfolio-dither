@@ -15,9 +15,6 @@ export default function Projects() {
           <h1 className="font-pixel text-[40px] leading-[60px] sm:text-[60px] sm:leading-[90px]">
             Projects
           </h1>
-          <p className="bg-background px-2 text-sm text-muted">
-            {projects.length} apps, more on the way
-          </p>
         </div>
       </Hero>
       <div className="mx-auto max-w-3xl px-6 pb-24">
