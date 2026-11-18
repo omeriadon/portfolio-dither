@@ -1,0 +1,9 @@
+# Used by Dokploy (Compose service). Dokploy's Traefik routes the domain to port 3000,
+# so nothing is published on the host. For local testing:
+#   docker build -t portfolio-dither . && docker run -p 3000:3000 portfolio-dither
+services:
+  web:
+    build: .
+    expose:
+      - "3000"
+    restart: unless-stopped

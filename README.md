@@ -10,16 +10,14 @@ bun run build
 
 ## Docker
 
-```sh
-docker compose up --build -d      # http://localhost:3000
-```
-
-Or without compose:
+Locally:
 
 ```sh
 docker build -t portfolio-dither .
-docker run -p 3000:3000 portfolio-dither
+docker run -p 3000:3000 portfolio-dither   # http://localhost:3000
 ```
+
+On Dokploy it deploys as a Compose service from `compose.yml`. In its Domains tab, attach the domain to service `web`, port 3000, with HTTPS and Let's Encrypt.
 
 The image builds Next's standalone server with bun and runs it with bun on port 3000 (set `PORT` to change it).
 
