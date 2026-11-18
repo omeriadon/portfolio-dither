@@ -4,8 +4,8 @@
     "description": "A live dithering camera for iPhone, iPad and Mac.",
     "status": "new",
     "platforms": ["iOS", "iPadOS", "macOS"],
-    "icon": "/icons/bayer.png",
-    "iconDark": "/icons/bayer-dark.png",
+    "icon": "/icons/bayer.avif",
+    "iconDark": "/icons/bayer-dark.avif",
     "links": [
       { "label": "GitHub", "url": "https://github.com/omeriadon/Bayer" }
     ]
@@ -15,8 +15,8 @@
     "description": "A philosophy companion.",
     "status": "in progress",
     "platforms": ["iOS"],
-    "icon": "/icons/ergo.png",
-    "iconDark": "/icons/ergo-dark.png",
+    "icon": "/icons/ergo.avif",
+    "iconDark": "/icons/ergo-dark.avif",
     "links": [
       { "label": "GitHub", "url": "https://github.com/omeriadon/Ergo" }
     ]
@@ -26,8 +26,8 @@
     "description": "The timetable app for students at my school: your classes, your friends' classes, grades, room locations, and Live Activities for your current and next subject.",
     "status": "on TestFlight",
     "platforms": ["iOS", "iPadOS", "macOS", "watchOS"],
-    "icon": "/icons/timetable.png",
-    "iconDark": "/icons/timetable-dark.png",
+    "icon": "/icons/timetable.avif",
+    "iconDark": "/icons/timetable-dark.avif",
     "links": [
       { "label": "GitHub", "url": "https://github.com/omeriadon/Timetable" },
       { "label": "TestFlight", "url": "https://testflight.apple.com/join/DDUXPSq3" }
@@ -38,8 +38,8 @@
     "description": "A web browser.",
     "status": "in progress",
     "platforms": ["macOS"],
-    "icon": "/icons/astra.png",
-    "iconDark": "/icons/astra-dark.png",
+    "icon": "/icons/astra.avif",
+    "iconDark": "/icons/astra-dark.avif",
     "links": [
       { "label": "GitHub", "url": "https://github.com/omeriadon/astra" }
     ]

@@ -13,7 +13,7 @@ export type Project = {
   /** Free text, e.g. "shipped", "in progress", "dead". Empty to hide. */
   status: string;
   platforms: string[];
-  /** Path under /public, e.g. "/icons/bayer.png". Empty for a letter placeholder. */
+  /** Path under /public, e.g. "/icons/bayer.avif". Empty for a letter placeholder. */
   icon: string;
   /** Optional dark-mode icon. Falls back to `icon`. */
   iconDark?: string;

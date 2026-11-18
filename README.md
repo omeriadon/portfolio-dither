@@ -34,8 +34,8 @@ Each project:
   "description": "One or two sentences.",
   "status": "any text, or \"\" to hide",
   "platforms": ["iOS", "macOS"],
-  "icon": "/icons/bayer.png",
-  "iconDark": "/icons/bayer-dark.png",
+  "icon": "/icons/bayer.avif",
+  "iconDark": "/icons/bayer-dark.avif",
   "links": [
     { "label": "GitHub", "url": "https://github.com/..." },
     { "label": "App Store", "url": "https://apps.apple.com/..." }
@@ -45,7 +45,7 @@ Each project:
 
 Icons live in `public/icons/`. Leave `icon` empty to show the first letter instead; `iconDark` is optional.
 
-To export an icon from an Icon Composer `.icon` file (light + dark PNGs):
+To export an icon from an Icon Composer `.icon` file (light + dark 128px AVIFs, about 3 KB each):
 
 ```sh
 scripts/export-icon.sh ~/Documents/Xcode_App_Library/Bayer/Bayer/Special/Bayer.icon bayer

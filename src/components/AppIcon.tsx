@@ -22,11 +22,12 @@ export function AppIcon({
     );
   }
 
-  const common = { alt: `${name} icon`, width: SIZE, height: SIZE };
+  // Icons are already tiny 128px AVIFs, so serve them as-is rather than through Next's optimizer
+  const common = { alt: `${name} icon`, width: SIZE, height: SIZE, unoptimized: true };
   const { props: light } = getImageProps({ ...common, src: icon });
-  const {
-    props: { srcSet: dark },
-  } = getImageProps({ ...common, src: iconDark || icon });
+  // Unoptimized images have no srcSet, so fall back to the plain src
+  const { props: darkProps } = getImageProps({ ...common, src: iconDark || icon });
+  const dark = darkProps.srcSet ?? darkProps.src;
 
   return (
     <picture className="shrink-0">

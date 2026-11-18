@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { AppIcon } from "@/components/AppIcon";
 import { Hero } from "@/components/Hero";
-import { SocialLinks } from "@/components/SocialLinks";
 import { projects, site } from "@/data";
 
 export default function Home() {
   return (
     <>
       <Hero>
-        <h1 className="font-pixel text-[40px] leading-[60px] sm:text-[60px] sm:leading-[90px]">
+        <h1 className="font-pixel text-[40px] leading-15 sm:text-[60px] sm:leading-22.5">
           {site.name}
         </h1>
       </Hero>
@@ -20,12 +19,11 @@ export default function Home() {
               {paragraph}
             </p>
           ))}
-          <SocialLinks className="text-sm" />
         </section>
 
         <section className="flex flex-col gap-8">
           <div className="flex items-baseline justify-between gap-4">
-            <h2 className="font-pixel text-[30px] leading-[45px]">Apps</h2>
+            <h2 className="font-pixel text-[30px] leading-11.25">Apps</h2>
             <Link
               href="/projects"
               className="text-sm text-muted underline decoration-subtle underline-offset-4 hover:text-foreground hover:decoration-foreground"
@@ -39,7 +37,7 @@ export default function Home() {
                 <Link href="/projects" className="group flex flex-col items-start gap-3">
                   <AppIcon name={project.name} icon={project.icon} iconDark={project.iconDark} />
                   <div className="flex flex-col gap-1">
-                    <span className="font-pixel text-[30px] leading-[40px] group-hover:underline group-hover:decoration-subtle group-hover:underline-offset-4">
+                    <span className="font-pixel text-[30px] leading-10 group-hover:underline group-hover:decoration-subtle group-hover:underline-offset-4">
                       {project.name}
                     </span>
                     {project.status && (

@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Render an Icon Composer .icon to public/icons/<slug>.png and <slug>-dark.png (256px).
+# Render an Icon Composer .icon to public/icons/<slug>.avif and <slug>-dark.avif (128px, AVIF quality 70).
 # Usage: scripts/export-icon.sh path/to/App.icon slug
 # Renders the default light/dark styles even if your Mac uses Clear or Tinted icons.
 # Uses a private macOS IconServices API, so it may break in a future macOS.
@@ -18,7 +18,9 @@ cat > $APP/Contents/Info.plist <<P
 P
 swiftc -O $ROOT/scripts/render-icon.swift -o $RENDER
 # args: app, out, appearance (0 light, 1 dark), variant, size
-$RENDER $APP $OUT/$SLUG.png 0 0 256 >/dev/null
-$RENDER $APP $OUT/$SLUG-dark.png 1 0 256 >/dev/null
+$RENDER $APP $W/light.png 0 0 128 >/dev/null
+$RENDER $APP $W/dark.png 1 0 128 >/dev/null
+sips -s format avif -s formatOptions 70 $W/light.png --out $OUT/$SLUG.avif >/dev/null
+sips -s format avif -s formatOptions 70 $W/dark.png --out $OUT/$SLUG-dark.avif >/dev/null
 rm -r $W
-echo "wrote $OUT/$SLUG.png and $OUT/$SLUG-dark.png"
+echo "wrote $OUT/$SLUG.avif and $OUT/$SLUG-dark.avif"
