@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
+/* Bayer's Newsprint palette: #1B1A17, #6B6358, #CFC6B5, #F4EFE6. Paper in light mode, ink in dark. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4efe6;
+  --foreground: #1b1a17;
+  --muted: #6b6358;
+  --subtle: #cfc6b5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1b1a17;
+    --foreground: #f4efe6;
+    --muted: #a39b8e;
+    --subtle: #3d3a35;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  /* Bayer's 5×7 font. Use sizes in multiples of 10px so cells land on whole pixels. */
+  --font-pixel: var(--font-bayer-pixel), var(--font-geist-mono), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
 }
