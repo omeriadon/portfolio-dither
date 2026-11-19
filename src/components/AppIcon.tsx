@@ -14,12 +14,15 @@ export function AppIcon({
 }) {
 	if (!icon) {
 		return (
+			// Inset like the real icons, which sit in the middle 824/1024 of their canvas
 			<div
 				aria-hidden
-				style={{ width: SIZE, height: SIZE }}
-				className="flex shrink-0 items-center justify-center rounded-[22%] bg-subtle text-xl font-medium text-muted"
+				style={{ width: SIZE, height: SIZE, padding: (SIZE * 100) / 1024 }}
+				className="shrink-0"
 			>
-				{name.charAt(0)}
+				<div className="flex size-full items-center justify-center rounded-[22.5%] bg-subtle font-pixel text-[20px] text-muted">
+					{name.charAt(0)}
+				</div>
 			</div>
 		);
 	}

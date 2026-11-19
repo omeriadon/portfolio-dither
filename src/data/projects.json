@@ -3,45 +3,201 @@
     "name": "Bayer",
     "description": "A live dithering camera for iPhone, iPad and Mac.",
     "status": "new",
-    "platforms": ["iOS", "iPadOS", "macOS"],
+    "platforms": [
+      "iOS",
+      "iPadOS",
+      "macOS"
+    ],
     "icon": "/icons/bayer.avif",
     "iconDark": "/icons/bayer-dark.avif",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/omeriadon/Bayer" }
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/Bayer"
+      }
+    ]
+  },
+  {
+    "name": "Bay",
+    "description": "Control your Mac from your iPhone and Apple Watch: move, click, drag, scroll and type, using a trackpad or by pointing the device in the air.",
+    "status": "in progress",
+    "platforms": [
+      "iOS",
+      "watchOS",
+      "macOS"
+    ],
+    "icon": "/icons/bay.avif",
+    "iconDark": "/icons/bay-dark.avif",
+    "links": []
+  },
+  {
+    "name": "Stipple",
+    "description": "A dithered watch face for Apple Watch: a live Bayer-dithered field with an optional clock, set up from your iPhone.",
+    "status": "in progress",
+    "platforms": [
+      "iOS",
+      "watchOS"
+    ],
+    "icon": "/icons/stipple.avif",
+    "iconDark": "/icons/stipple-dark.avif",
+    "links": []
+  },
+  {
+    "name": "Squint",
+    "description": "Ergo cut down for my Swift Student Challenge 2027 entry: short lessons on logical fallacies and cognitive biases, and Describe It, where you describe some reasoning and on-device Foundation Models names the fallacy or bias.",
+    "status": "Swift Student Challenge 2027",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/icons/squint.avif",
+    "iconDark": "/icons/squint-dark.avif",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/ErgoSSC"
+      }
     ]
   },
   {
     "name": "Ergo",
     "description": "A philosophy companion.",
     "status": "in progress",
-    "platforms": ["iOS"],
+    "platforms": [
+      "iOS"
+    ],
     "icon": "/icons/ergo.avif",
     "iconDark": "/icons/ergo-dark.avif",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/omeriadon/Ergo" }
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/Ergo"
+      }
     ]
   },
   {
     "name": "Timetable",
     "description": "The timetable app for students at my school: your classes, your friends' classes, grades, room locations, and Live Activities for your current and next subject.",
     "status": "on TestFlight",
-    "platforms": ["iOS", "iPadOS", "macOS", "watchOS"],
+    "platforms": [
+      "iOS",
+      "iPadOS",
+      "macOS",
+      "watchOS"
+    ],
     "icon": "/icons/timetable.avif",
     "iconDark": "/icons/timetable-dark.avif",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/omeriadon/Timetable" },
-      { "label": "TestFlight", "url": "https://testflight.apple.com/join/DDUXPSq3" }
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/Timetable"
+      },
+      {
+        "label": "TestFlight",
+        "url": "https://testflight.apple.com/join/DDUXPSq3"
+      }
     ]
   },
   {
     "name": "Astra",
     "description": "A web browser.",
     "status": "in progress",
-    "platforms": ["macOS"],
+    "platforms": [
+      "macOS"
+    ],
     "icon": "/icons/astra.avif",
     "iconDark": "/icons/astra-dark.avif",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/omeriadon/astra" }
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/astra"
+      }
+    ]
+  },
+  {
+    "name": "Dock Reflections",
+    "description": "An Ammonia tweak for macOS that adds Liquid Glass reflections under Dock icons and swaps the running-app dots for configurable glowing indicators.",
+    "status": "released",
+    "platforms": [
+      "macOS"
+    ],
+    "icon": "/icons/dock-reflections.avif",
+    "iconDark": "/icons/dock-reflections-dark.avif",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/DockReflections"
+      },
+      {
+        "label": "Download v1",
+        "url": "https://github.com/omeriadon/DockReflections/releases/tag/v1"
+      }
+    ]
+  },
+  {
+    "name": "Money",
+    "description": "Track money, analyse your expenses and budget better, with a watchOS app too.",
+    "status": "in progress",
+    "platforms": [
+      "iOS",
+      "watchOS"
+    ],
+    "icon": "/icons/money.avif",
+    "iconDark": "/icons/money-dark.avif",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/Money"
+      }
+    ]
+  },
+  {
+    "name": "Elements",
+    "description": "A light, fast periodic table, with quizzes generated and marked by Apple's on-device Foundation Models. My Swift Student Challenge 2026 submission.",
+    "status": "Swift Student Challenge 2026",
+    "platforms": [
+      "iPadOS",
+      "iOS"
+    ],
+    "icon": "/icons/elements.avif",
+    "iconDark": "/icons/elements-dark.avif",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/Elements"
+      }
+    ]
+  },
+  {
+    "name": "Peep",
+    "description": "Send video from your iPhone to your Apple Watch.",
+    "status": "in progress",
+    "platforms": [
+      "iOS",
+      "watchOS"
+    ],
+    "icon": "/icons/peep.avif",
+    "iconDark": "/icons/peep-dark.avif",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/Peep"
+      }
+    ]
+  },
+  {
+    "name": "EduCalm",
+    "description": "An educational wellness companion with resources, calming sounds and chat, made with friends for our school's Compassion Project.",
+    "status": "school project",
+    "platforms": [
+      "iOS"
+    ],
+    "icon": "/icons/educalm.avif",
+    "iconDark": "/icons/educalm-dark.avif",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/omeriadon/EduCalm"
+      }
     ]
   }
 ]

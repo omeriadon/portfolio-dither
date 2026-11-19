@@ -31,13 +31,13 @@ export default function Home() {
               all projects →
             </Link>
           </div>
-          <ul className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
+          <ul className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3">
             {projects.map((project) => (
               <li key={project.name}>
                 <Link href="/projects" className="group flex flex-col items-start gap-3">
                   <AppIcon name={project.name} icon={project.icon} iconDark={project.iconDark} />
                   <div className="flex flex-col gap-1">
-                    <span className="font-pixel text-[30px] leading-10 group-hover:underline group-hover:decoration-subtle group-hover:underline-offset-4">
+                    <span className="font-pixel text-[20px] leading-[30px] sm:text-[30px] sm:leading-10 group-hover:underline group-hover:decoration-subtle group-hover:underline-offset-4">
                       {project.name}
                     </span>
                     {project.status && (
